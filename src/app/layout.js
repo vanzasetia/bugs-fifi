@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Fresh Next.js",
+  title: "Bugs FiFi — Automatically find and fix bugs with just one click",
 };
 
 export default function RootLayout({ children }) {
