@@ -6,6 +6,10 @@ Bugs FiFi is an application that can find and fix bugs. You can fix all the bugs
 
 Try it yourself. [Bugs FiFi — Fix All Bugs with Just One Click](https://bugsfifi.netlify.app/)
 
+## Note
+
+This is a practice project to learn NextJS.
+
 ## License
 
 [MIT](./LICENSE)
