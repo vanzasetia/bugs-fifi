@@ -1,0 +1,89 @@
+:root {
+  --dark: #222;
+  --light: #ddd;
+  --foreground: var(--dark);
+  --background: var(--light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: var(--light);
+    --background: var(--dark);
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+body {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: calc(1rem + 0.5vw);
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--light);
+  text-rendering: optimizeSpeed;
+  padding: 1rem;
+}
+
+button:focus {
+  outline: 0.3em solid;
+  outline-offset: -0.6em;
+}
+
+main {
+  max-width: 60ch;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button[type] {
+  position: relative;
+  font: inherit;
+  color: inherit;
+  padding: 0.5em 1em;
+  display: block;
+  width: 100%;
+  border: 0.3rem solid;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.3rem 0 0;
+  background-color: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+ul {
+  padding-left: 1.25em;
+}
+
+ul + p {
+  display: none;
+}
+
+ul:empty + p {
+  display: block;
+}
+
+li + li {
+  margin-top: 1em;
+}
+
+button:active {
+  box-shadow: 0 0.2rem 0 0;
+  top: 0.125rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 0.3rem solid;
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
